@@ -1,0 +1,53 @@
+{
+  "name": "env-templater",
+  "version": "0.0.0",
+  "description": "Creates env files from templates with SSM support for various api clients.",
+  "keywords": [
+    "env templater",
+    "environment files",
+    "typescript",
+    "bruno"
+  ],
+  "homepage": "https://github.com/dkhunt27/env-templater",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "cli": "npm run build && node dist/index.js",
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "lint": "biome check --error-on-warnings",
+    "format": "biome format --write",
+    "test": "vitest run --coverage"
+  },
+  "author": "dkhunt27@gmail.com",
+  "repository": "github:dkhunt27/env-templater",
+  "bugs": {
+    "url": "https://github.com/dkhunt27/env-templater/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.3",
+    "@types/node": "^22.18.1",
+    "@vitest/coverage-istanbul": "3.2.4",
+    "tsdown": "^0.15.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "nest-commander": "^3.18.0"
+  }
+}
