@@ -16,6 +16,9 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "bin": {
+    "env-templater": "src/bin/env-templater"
+  },
   "types": "./dist/index.d.ts",
   "sideEffects": false,
   "files": [

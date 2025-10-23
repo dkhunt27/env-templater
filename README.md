@@ -39,27 +39,11 @@ npm run lint
 npm run test
 ```
 
-Node usage:
+## Usage
 
-```ts
-import { runNx, type NxCommandInputs } from "env-templater";
+Install via npm/yarn `npm install env-templater`
 
-const inputs: NxCommandInputs = {
-      command: 'targetedAffected',
-      affectedToIgnore: [],
-      args: [],
-      baseBoundaryOverride: '',
-      headBoundaryOverride: '',
-      isWorkflowsCiPipeline: false,
-      parallel: 3,
-      projects: [],
-      setNxBranchToPrNumber: false,
-      targets: [],
-      workingDirectory: '',
-    };
-
-await runNx(inputs);
-```
+Then run `npm run env-templater [OPTIONS]`
 
 ## Releasing
 
