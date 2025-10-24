@@ -1,0 +1,19 @@
+{
+  "brunoFolder": "_bruno",
+  "collections": [
+    {
+      "name": "Collection1",
+      "envVars": [
+        {
+          "key": "SECRET1",
+          "value": "coll1_var1_secret1"
+        },
+        {
+          "key": "SECRET2",
+          "value": "coll1_var1_secret2"
+        }
+      ]
+    }
+  ],
+  "awsRegion": "us-west-2"
+}

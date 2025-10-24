@@ -1,0 +1,25 @@
+meta {
+  name: Request1
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://jsonplaceholder.typicode.com/posts
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "var1": "{{VAR1}}",
+    "var2": "{{VAR2}}",
+    "var3: "{{VAR3}}",
+    "secret1: "{{SECRET1}}",
+    "secret2: "{{SECRET2}}",
+  }
+}
