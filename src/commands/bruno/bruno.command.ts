@@ -50,8 +50,6 @@ export class BrunoCommand extends CommandRunner {
 
 @QuestionSet({ name: BRUNO_QUESTIONS })
 export class BrunoCommandQuestions {
-  constructor() {}
-
   @Question({
     type: 'input',
     name: 'configFile',
